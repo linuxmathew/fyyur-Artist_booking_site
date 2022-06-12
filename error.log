@@ -1,0 +1,1347 @@
+
+2022-06-09 18:15:13,477 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:516]
+2022-06-09 19:34:11,499 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:516]
+2022-06-09 19:37:36,131 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:516]
+2022-06-09 19:37:57,530 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:516]
+2022-06-09 19:40:28,652 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:516]
+2022-06-10 11:44:14,555 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:516]
+2022-06-10 11:44:49,241 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 226, in create_venue_form
+    form = VenueForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-10 11:44:57,497 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 226, in create_venue_form
+    form = VenueForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-10 11:45:36,017 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 226, in create_venue_form
+    form = VenueForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-10 11:45:40,508 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 226, in create_venue_form
+    form = VenueForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-10 11:45:49,137 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 226, in create_venue_form
+    form = VenueForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-10 11:46:54,487 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 226, in create_venue_form
+    form = VenueForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-10 12:18:02,399 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 226, in create_venue_form
+    form = VenueForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-10 12:18:36,821 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:516]
+2022-06-10 12:19:05,273 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 226, in create_venue_form
+    form = VenueForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-10 12:24:17,869 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 226, in create_venue_form
+    form = VenueForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-10 15:40:53,970 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:517]
+2022-06-10 15:41:39,889 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:517]
+2022-06-10 15:42:18,498 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:517]
+2022-06-10 16:14:56,770 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:519]
+2022-06-10 16:15:07,059 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 228, in create_venue_form
+    form = VenueForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-10 17:44:15,780 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:522]
+2022-06-10 17:44:58,543 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:522]
+2022-06-10 17:47:11,689 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:522]
+2022-06-10 20:12:00,545 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:523]
+2022-06-10 20:17:05,490 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 231, in create_venue_form
+    form = VenueForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-11 12:54:01,121 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:523]
+2022-06-11 12:54:13,670 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 231, in create_venue_form
+    form = VenueForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-11 12:56:01,169 ERROR: Exception on /shows/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 491, in create_shows
+    form = ShowForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-11 12:57:35,521 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 231, in create_venue_form
+    form = VenueForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-11 13:37:24,067 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:523]
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              2022-06-11 13:51:57,715 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:523]
+2022-06-11 13:52:09,569 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 231, in create_venue_form
+    form = VenueForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-11 13:53:11,333 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 231, in create_venue_form
+    form = VenueForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-11 14:36:29,284 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:544]
+2022-06-11 14:37:20,751 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:544]
+2022-06-11 14:44:00,069 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:544]
+2022-06-11 14:45:12,731 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:544]
+2022-06-11 14:45:49,072 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:544]
+2022-06-11 14:47:54,174 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:544]
+2022-06-11 14:48:44,274 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:544]
+2022-06-11 14:49:40,081 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:544]
+2022-06-11 14:49:54,964 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:544]
+2022-06-11 14:50:03,722 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:544]
+2022-06-11 14:50:35,288 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:544]
+2022-06-11 14:52:33,726 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:544]
+2022-06-11 14:53:04,897 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:544]
+2022-06-11 14:53:13,757 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:544]
+2022-06-11 14:53:43,892 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:544]
+2022-06-11 14:53:51,299 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:544]
+2022-06-11 14:59:13,898 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 236, in create_venue_form
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-11 14:59:24,981 ERROR: Exception on /shows/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 512, in create_shows
+    form = ShowForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-11 14:59:30,077 ERROR: Exception on /artists/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 447, in create_artist_form
+    form = ArtistForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-11 14:59:35,461 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 236, in create_venue_form
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-11 15:56:06,736 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 236, in create_venue_form
+    form = VenueForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-11 16:03:50,279 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:545]
+2022-06-11 16:04:03,363 ERROR: Exception on /venues [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column venue.seeking_description does not exist
+LINE 1: ...e.num_upcoming_shows AS venue_num_upcoming_shows, venue.seek...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 129, in venues
+    return render_template('pages/venues.html', areas=Venue.query.all()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2768, in all
+    return self._iter().all()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1696, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 325, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column venue.seeking_description does not exist
+LINE 1: ...e.num_upcoming_shows AS venue_num_upcoming_shows, venue.seek...
+                                                             ^
+
+[SQL: SELECT venue.id AS venue_id, venue.name AS venue_name, venue.city AS venue_city, venue.state AS venue_state, venue.address AS venue_address, venue.phone AS venue_phone, venue.image_link AS venue_image_link, venue.facebook_link AS venue_facebook_link, venue.num_upcoming_shows AS venue_num_upcoming_shows, venue.seeking_description AS venue_seeking_description, venue.website_link AS venue_website_link, venue.genres AS venue_genres 
+FROM venue]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2022-06-11 16:04:07,183 ERROR: Exception on /venues [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column venue.seeking_description does not exist
+LINE 1: ...e.num_upcoming_shows AS venue_num_upcoming_shows, venue.seek...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 129, in venues
+    return render_template('pages/venues.html', areas=Venue.query.all()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2768, in all
+    return self._iter().all()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1696, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 325, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column venue.seeking_description does not exist
+LINE 1: ...e.num_upcoming_shows AS venue_num_upcoming_shows, venue.seek...
+                                                             ^
+
+[SQL: SELECT venue.id AS venue_id, venue.name AS venue_name, venue.city AS venue_city, venue.state AS venue_state, venue.address AS venue_address, venue.phone AS venue_phone, venue.image_link AS venue_image_link, venue.facebook_link AS venue_facebook_link, venue.num_upcoming_shows AS venue_num_upcoming_shows, venue.seeking_description AS venue_seeking_description, venue.website_link AS venue_website_link, venue.genres AS venue_genres 
+FROM venue]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2022-06-11 16:04:10,516 ERROR: Exception on /venues [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column venue.seeking_description does not exist
+LINE 1: ...e.num_upcoming_shows AS venue_num_upcoming_shows, venue.seek...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 129, in venues
+    return render_template('pages/venues.html', areas=Venue.query.all()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2768, in all
+    return self._iter().all()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1696, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 325, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column venue.seeking_description does not exist
+LINE 1: ...e.num_upcoming_shows AS venue_num_upcoming_shows, venue.seek...
+                                                             ^
+
+[SQL: SELECT venue.id AS venue_id, venue.name AS venue_name, venue.city AS venue_city, venue.state AS venue_state, venue.address AS venue_address, venue.phone AS venue_phone, venue.image_link AS venue_image_link, venue.facebook_link AS venue_facebook_link, venue.num_upcoming_shows AS venue_num_upcoming_shows, venue.seeking_description AS venue_seeking_description, venue.website_link AS venue_website_link, venue.genres AS venue_genres 
+FROM venue]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2022-06-11 16:04:18,757 ERROR: Exception on /venues [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column venue.seeking_description does not exist
+LINE 1: ...e.num_upcoming_shows AS venue_num_upcoming_shows, venue.seek...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 129, in venues
+    return render_template('pages/venues.html', areas=Venue.query.all()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2768, in all
+    return self._iter().all()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1696, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 325, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column venue.seeking_description does not exist
+LINE 1: ...e.num_upcoming_shows AS venue_num_upcoming_shows, venue.seek...
+                                                             ^
+
+[SQL: SELECT venue.id AS venue_id, venue.name AS venue_name, venue.city AS venue_city, venue.state AS venue_state, venue.address AS venue_address, venue.phone AS venue_phone, venue.image_link AS venue_image_link, venue.facebook_link AS venue_facebook_link, venue.num_upcoming_shows AS venue_num_upcoming_shows, venue.seeking_description AS venue_seeking_description, venue.website_link AS venue_website_link, venue.genres AS venue_genres 
+FROM venue]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2022-06-11 16:04:28,185 ERROR: Exception on /venues [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column venue.seeking_description does not exist
+LINE 1: ...e.num_upcoming_shows AS venue_num_upcoming_shows, venue.seek...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 129, in venues
+    return render_template('pages/venues.html', areas=Venue.query.all()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2768, in all
+    return self._iter().all()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1696, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 325, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column venue.seeking_description does not exist
+LINE 1: ...e.num_upcoming_shows AS venue_num_upcoming_shows, venue.seek...
+                                                             ^
+
+[SQL: SELECT venue.id AS venue_id, venue.name AS venue_name, venue.city AS venue_city, venue.state AS venue_state, venue.address AS venue_address, venue.phone AS venue_phone, venue.image_link AS venue_image_link, venue.facebook_link AS venue_facebook_link, venue.num_upcoming_shows AS venue_num_upcoming_shows, venue.seeking_description AS venue_seeking_description, venue.website_link AS venue_website_link, venue.genres AS venue_genres 
+FROM venue]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2022-06-11 16:04:40,149 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:545]
+2022-06-11 16:37:53,013 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 236, in create_venue_form
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-11 16:47:33,767 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 236, in create_venue_form
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-11 17:38:07,790 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 236, in create_venue_form
+    def create_venue_form():
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-11 18:01:11,552 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:590]
+2022-06-11 18:01:33,530 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:590]
+2022-06-11 18:01:50,877 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:590]
+2022-06-11 18:02:23,177 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:590]
+2022-06-11 18:08:07,947 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:608]
+2022-06-11 18:08:24,590 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 262, in create_venue_form
+    form = VenueForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-11 18:08:33,465 ERROR: Exception on /venues [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 112, in venues
+    all_areas = Venue.query.with_entities(func.count(Venue.id), Venue.city, Venue.state).group_by(Venue.city, Venue.state).all()
+NameError: name 'func' is not defined
+2022-06-11 18:08:38,527 ERROR: Exception on /venues [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 112, in venues
+    all_areas = Venue.query.with_entities(func.count(Venue.id), Venue.city, Venue.state).group_by(Venue.city, Venue.state).all()
+NameError: name 'func' is not defined
+2022-06-11 18:10:56,786 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:591]
+2022-06-11 18:11:28,051 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:591]
+2022-06-11 18:14:49,258 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:608]
+2022-06-11 19:53:16,195 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:608]
+2022-06-11 19:53:50,420 ERROR: Exception on /venues [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 112, in venues
+    all_areas = Venue.query.with_entities(func.count(Venue.id), Venue.city, Venue.state).group_by(Venue.city, Venue.state).all()
+NameError: name 'func' is not defined
+2022-06-11 19:54:53,671 ERROR: Exception on /venues [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 112, in venues
+    all_areas = Venue.query.with_entities(func.count(Venue.id), Venue.city, Venue.state).group_by(Venue.city, Venue.state).all()
+NameError: name 'func' is not defined
+2022-06-11 20:32:09,503 ERROR: Exception on /venues [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 112, in venues
+    all_areas = Venue.query.with_entities(func.count(Venue.id), Venue.city, Venue.state).group_by(Venue.city, Venue.state).all()
+NameError: name 'func' is not defined
+2022-06-11 20:32:36,535 ERROR: Exception on /venues [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 112, in venues
+    all_areas = Venue.query.with_entities(func.count(Venue.id), Venue.city, Venue.state).group_by(Venue.city, Venue.state).all()
+NameError: name 'func' is not defined
+2022-06-12 12:22:32,055 INFO: errors [in /home/temitayo/Desktop/udacity_project/fyyur/app.py:625]
+2022-06-12 12:23:07,527 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 279, in create_venue_form
+    form = VenueForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-12 12:23:12,448 ERROR: Exception on /artists/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 505, in create_artist_form
+    form = ArtistForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-12 12:23:17,799 ERROR: Exception on /shows/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 593, in create_shows
+    form = ShowForm()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-12 13:06:47,465 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 279, in create_venue_form
+    return render_template('forms/new_venue.html', form=form)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-12 13:38:07,120 ERROR: Exception on /venues/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 279, in create_venue_form
+    return render_template('forms/new_venue.html', form=form)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-06-12 13:38:13,533 ERROR: Exception on /artists/create [GET] [in /home/temitayo/.local/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/temitayo/Desktop/udacity_project/fyyur/app.py", line 505, in create_artist_form
+    return render_template('forms/new_artist.html', form=form)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/home/temitayo/.local/lib/python3.10/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
