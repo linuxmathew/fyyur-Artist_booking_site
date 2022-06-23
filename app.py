@@ -173,12 +173,46 @@ def search_venues():
 @app.route('/venues/<int:venue_id>')
 def show_venue(venue_id):
   # shows the venue page with the given venue_id
-  
+  venue_to_show = Venue.query.get(venue_id)  
   # TODO: replace with real venue data from the venues table, using venue_id
-  
-  
+  our_shows = Show.query.filter_by(venue_id=venue_id).all()
+ 
+  #set an empty array for past and upcoming show then pass value into them later
+  past_shows = []
+  upcoming_shows = []
+  today_date = datetime.now()
+
+  # To show past and upcoming shows
+  for show in our_shows:
+    values = {
+          "artist_id": show.artist_id,
+          "artist_name": show.artist.name,
+          "artist_image_link": show.artist.image_link,
+          "start_time": format_datetime(str(show.start_time))
+        }
+    if show.start_time > today_date:
+      #append (add) values from query "values" into upcoming_show array
+      upcoming_shows.append(values)
+    else:
+      past_shows.append(values)
+    
+  values={
+    "id": venue_to_show.id,
+    "name": venue_to_show.name,
+    "genres": venue_to_show.genres,
+    "address": venue_to_show.address,
+    "city": venue_to_show.city,
+    "state": venue_to_show.state,
+    "phone": venue_to_show.phone,
+    "facebook_link": venue_to_show.facebook_link,
+    "image_link": venue_to_show.image_link,
+    "past_shows": past_shows,
+    "upcoming_shows": upcoming_shows,
+    "past_shows_count": len(past_shows),
+    "upcoming_shows_count": len(upcoming_shows)
+  }
   return render_template('pages/show_venue.html', 
-  venue = Venue.query.get(venue_id)
+  venue=values
   )
 
 #  Create Venue
@@ -237,7 +271,6 @@ def delete_venue(venue_id):
   # SQLAlchemy ORM to delete a record. Handle cases where the session commit could fail.
   error = False
   try:
-    
     venue_to_delete = Venue.query.get(venue_id)
     db.session.delete(venue_to_delete)
     db.session.commit()
@@ -297,9 +330,43 @@ def search_artists():
 def show_artist(artist_id):
   # shows the artist page with the given artist_id
   # TODO: replace with real artist data from the artist table, using artist_id
-  
+  artist_to_get = Artist.query.get(artist_id)
+  our_shows = Show.query.filter_by(artist_id=artist_id).all()
+  #set an empty array for past and upcoming show then pass value into them later
+  past_shows = []
+  upcoming_shows = []
+  today_date = datetime.now()
+
+  # To show past and upcoming shows
+  for show in our_shows:
+    values = {
+          "venue_id": show.venue_id,
+          "venue_name": show.venue.name,
+          "venue_image_link": show.venue.image_link,
+          "start_time": format_datetime(str(show.start_time))
+        }
+    if show.start_time > today_date:
+      #append (add) values from query "values" into upcoming_show array
+      upcoming_shows.append(values)
+    else:
+      past_shows.append(values)
+
+  values={
+    "id": artist_to_get.id,
+    "name": artist_to_get.name,
+    "genres": artist_to_get.genres,
+    "city": artist_to_get.city,
+    "state": artist_to_get.state,
+    "phone": artist_to_get.phone,
+    "facebook_link": artist_to_get.facebook_link,
+    "image_link": artist_to_get.image_link,
+    "past_shows": past_shows,
+    "upcoming_shows": upcoming_shows,
+    "past_shows_count": len(past_shows),
+    "upcoming_shows_count": len(upcoming_shows)
+  }
   return render_template('pages/show_artist.html', 
-  artist = Artist.query.get(artist_id))
+  artist = values)
 
 #  Update
 #  ----------------------------------------------------------------
